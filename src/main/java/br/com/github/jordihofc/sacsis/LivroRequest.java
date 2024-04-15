@@ -3,6 +3,7 @@ package br.com.github.jordihofc.sacsis;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 import java.awt.print.Book;
@@ -18,7 +19,7 @@ public class LivroRequest {
         private String description;
         @NotBlank
         private String isbn;
-        @NotBlank
+        @NotNull
         @Positive
         private BigDecimal price;
 
@@ -26,7 +27,7 @@ public class LivroRequest {
 
 
         public Livro toModel(){
-            Livro newBook = new Livro();
+//            Livro newBook = new Livro();
 
 //            newBook.setTitle(title);
 //            newBook.setDescription(description);

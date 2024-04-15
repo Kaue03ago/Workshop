@@ -16,7 +16,7 @@ public class CadastrarLivroController {
     private final LivroRepository repository;
 
     public CadastrarLivroController(LivroRepository repository){
-        this.repository = repository;//injeção de dependência?
+        this.repository = repository;//
     }
 
     @PostMapping("/livros")
