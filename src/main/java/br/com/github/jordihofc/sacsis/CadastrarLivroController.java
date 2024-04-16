@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 
 @RestController
 public class CadastrarLivroController {
-    private final LivroRepository repository;
+    private final LivroRepository repository;//injeção de dependencia, criando repository
 
     public CadastrarLivroController(LivroRepository repository){
         this.repository = repository;//
@@ -21,8 +21,8 @@ public class CadastrarLivroController {
 
     @PostMapping("/livros")
     public ResponseEntity<?> cadastrar(@RequestBody @Valid LivroRequest request){//request é o obj q o Spring vai criar a partir
-        // do JSON q o cliente enviar
-        //ao colocar as validações no livro, eh necessario colocar @Valid para q funcione ok
+        // response eh a resposta q o Spring vai dar
+        //ao colocar as validações no livro, eh necessario colocar @Valid para q funcione
 
         System.out.println(request);
 

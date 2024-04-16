@@ -9,7 +9,7 @@ import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 
-@Entity
+@Entity//sendo entity o jpa vai criar uma tabela no banco de dados
 public class Livro {
 
     @Id//indica q esse atributo eh a chave primária

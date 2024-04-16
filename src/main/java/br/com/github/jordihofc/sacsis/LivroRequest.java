@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 import java.awt.print.Book;
 import java.math.BigDecimal;
 
-public class LivroRequest {
+public class LivroRequest {//dto para receber os dados do cliente de forma + segura
 
         @NotBlank
         @Size(max = 35)
